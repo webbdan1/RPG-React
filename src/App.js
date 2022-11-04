@@ -187,7 +187,7 @@ function randomNumberBetweenZeroAndOne() {
   return (
     <div className="wrapper">
       <div className="container wrapper-box">
-        <h2>Secure Offline Password / Passphrase Generator</h2>
+        <h1>Secure Offline Password / Passphrase Generator</h1>
         <div className="password-box">
           <input
             type="text"
