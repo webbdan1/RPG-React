@@ -16,11 +16,22 @@ function App() {
   const [handelText, setHandelText] = useState('');
   const [copied, setCopied] = useState(false);
 
+function getDefaultLen() {
+  if (passwordGen.passphrase){
+    return 16;
+  }
+  return 3;
+}
+
   const handleChangePassphrase = () => {
     setPasswordGen({
       ...passwordGen,
       passphrase: !passwordGen.passphrase,
+      length: getDefaultLen()
+
+
     });
+
   };
 
   const handleChangeUppercase = () => {
@@ -229,7 +240,6 @@ function randomNumberBetweenZeroAndOne() {
           </div>
           <div>
             <Checkbox
-
               value={passwordGen.passphrase}
               onChange={handleChangePassphrase}
             />
