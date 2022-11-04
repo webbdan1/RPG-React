@@ -285,7 +285,7 @@ function randomNumberBetweenZeroAndOne() {
           </button>
 
         </div>
-        Passwords are securely generated on your machine, meaning no data is sent over the internet. Strong passwords
+        Passwords / Passphrases are securely generated on your machine, meaning no data is sent over the internet. Strong passwords
         should not be memorable and should be changed frequently. Store in your favorite password manager to avoid
         the need to remember the password.
       </div>
