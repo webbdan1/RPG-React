@@ -27,13 +27,13 @@ div#root {
 
 .container {
   background-color: #ffffff;
-  width: 60%;
+  width: 400px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .wrapper-box {
-  padding: 180px;
+  padding: 30px;
 }
 
 .word-crieteria__box {
