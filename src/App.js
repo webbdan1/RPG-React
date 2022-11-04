@@ -89,13 +89,18 @@ function randomNumberBetweenZeroAndOne() {
         ...(lowercase ? lowerCaseLetters : []),
         ...(uppercase ? upperCaseLetters : []),
         ...(numbers ? numbersArray : []),
-        ...(symbols ? symbolsArray : []),
+        ...(symbols ? symbolsArray : [])
       ];
 
-      const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
-      const characters = shuffleArray(availableCharacters).slice(0, length);
-      setHandelText(characters.join(''));
-      return characters;
+      // Empty array to be filled with wordlist
+      var generatedPasswordArray = [];
+      // Grab a random word, push it to the password array
+      for (var j = 0; j < parseInt(length); j++) {
+          var wordIndex = Math.floor(randomNumberBetweenZeroAndOne() * availableCharacters.length);
+          generatedPasswordArray.push(availableCharacters[wordIndex]);
+      }
+      setHandelText(generatedPasswordArray.join(''));
+      return generatedPasswordArray;
     };
 
     const generateThePhrase = (
@@ -129,9 +134,9 @@ function randomNumberBetweenZeroAndOne() {
         ...(symbols ? symbolsArray : [])
       ]
 
-//      // Empty array to be filled with wordlist
+      // Empty array to be filled with wordlist
       var generatedPasswordArray = [];
-//      // Grab a random word, push it to the password array
+      // Grab a random word, push it to the password array
       for (var j = 0; j < parseInt(length); j++) {
           var wordIndex = Math.floor(randomNumberBetweenZeroAndOne() * availableCharacters.length);
           var numIndex = Math.floor(randomNumberBetweenZeroAndOne() * numbersArray.length);
@@ -155,12 +160,6 @@ function randomNumberBetweenZeroAndOne() {
       }
       setHandelText(generatedPasswordArray.join('-'));
       return generatedPasswordArray;
-
-//      const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
-//      console.log(shuffleArray(availableCharacters).length);
-//      const characters = shuffleArray(availableCharacters).slice(0, length);
-//      setHandelText(characters.join(''));
-//      return characters;
     };
 
     if (passphrase){
@@ -210,6 +209,7 @@ function randomNumberBetweenZeroAndOne() {
                 <select name="length" length
                 value={passwordGen.length}
                 onChange={(e) => setPasswordLength(parseInt(e.target.value))}>
+                <option value="1">1</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="8">8</option>
