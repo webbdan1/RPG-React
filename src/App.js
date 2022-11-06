@@ -212,8 +212,9 @@ function popup(url) {
 
         <h1>Secure Offline Password / Passphrase Generator</h1>
 
-          <hr class="solid"/>
-        <br />
+        <hr class="solid"/>
+        <br/>
+
         <div className="password-box">
           <input
             type="text"
@@ -263,16 +264,16 @@ function popup(url) {
         </div>
 
           <div className="word-crieteria__box">
-          <div>
-            <label>Generate Passphrase?</label>
+              <div>
+                <label>Generate Passphrase?</label>
+              </div>
+              <div>
+                <Checkbox
+                  value={passwordGen.passphrase}
+                  onChange={handleChangePassphrase}
+                />
+              </div>
           </div>
-          <div>
-            <Checkbox
-              value={passwordGen.passphrase}
-              onChange={handleChangePassphrase}
-            />
-          </div>
-        </div>
 
         <div className="word-crieteria__box">
           <div>
@@ -326,17 +327,20 @@ function popup(url) {
           <button className="generate-button" onClick={generatePassword}>
             Generate password
           </button>
-
         </div>
+
         <br />
           <hr class="solid"/>
         <br />
+
         <div className="about__box">
             Passwords / Passphrases are securely generated on your machine, meaning no data is sent over the internet. Strong passwords
             should not be memorable and should be changed frequently. Store in your favorite password manager to avoid
             the need to remember the password.
         </div>
+
         <br />
+
         <div className="share__box">
                 <a href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=TITLE&p%5Bsummary%5D=DESC&p%5Burl%5D=URL&p%5Bimages%5D%5B0%5D=IMG_PATH"
                 onClick={facebook}>Share tool on Facebook</a>
@@ -349,13 +353,13 @@ function popup(url) {
             Here are some password managers we suggest:
         </h2>
 
-         <p>
+        <p>
             <a href="https://securerandompassword.net"> Bitwarden - Zero-knowledge password manager</a>
-         </p>
+        </p>
 
-         <p>
+        <p>
             <a href="https://1password.com/"> Dashlane - includes auto password-changing feature </a>
-         </p>
+        </p>
 
      </div>
 
