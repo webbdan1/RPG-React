@@ -2,6 +2,9 @@
 	$IPHONE
 \*------------------------------------*/
 @media screen and (max-device-width: 480px){
+    header {
+    margin-top: -32px !important;
+    }
     body{
         -webkit-text-size-adjust:none;
         font-family:Helvetica, Arial, Verdana, sans-serif;
@@ -41,6 +44,8 @@ div#root {
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
+  min-height: 100%;
+  bottom: 0;
 }
 
 .wrapper-box {
