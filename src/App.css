@@ -27,7 +27,7 @@ div#root {
 
 .container {
   background-color: #ffffff;
-  width: 500px;
+  width: 400px;
   max-width: 100%;
   margin: 0 auto;
   min-height: 100%;
@@ -35,7 +35,7 @@ div#root {
 }
 
 .wrapper-box {
-  padding: 80px;
+  padding: 180px;
 }
 
 .word-crieteria__box {
