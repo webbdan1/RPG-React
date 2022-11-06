@@ -212,6 +212,8 @@ function popup(url) {
 
         <h1>Secure Offline Password / Passphrase Generator</h1>
 
+          <hr class="solid"/>
+        <br />
         <div className="password-box">
           <input
             type="text"
@@ -324,9 +326,11 @@ function popup(url) {
           <button className="generate-button" onClick={generatePassword}>
             Generate password
           </button>
+
         </div>
         <br />
-
+          <hr class="solid"/>
+        <br />
         <div className="about__box">
             Passwords / Passphrases are securely generated on your machine, meaning no data is sent over the internet. Strong passwords
             should not be memorable and should be changed frequently. Store in your favorite password manager to avoid
