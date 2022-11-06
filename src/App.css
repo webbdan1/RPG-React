@@ -1,15 +1,19 @@
 /*------------------------------------*\
 	$IPHONE
 \*------------------------------------*/
-@media screen and (max-device-width: 480px){
-    header {
-    margin-top: -32px !important;
-    }
-    body{
-        -webkit-text-size-adjust:none;
-        font-family:Helvetica, Arial, Verdana, sans-serif;
-        padding:5px;
-    }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+.form-label-top {
+  width: 250px !important;
+  font-size: 12px !important;
+
+}
+
+.form-header {
+  width: 250px !important;
+  font-size: 14px !important;
+}
 }
 
 body {
