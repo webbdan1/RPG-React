@@ -360,7 +360,7 @@ function popup(url) {
         <p>
             <a href="https://1password.com/"> Dashlane - includes auto password-changing feature </a>
         </p>
-        <br /><br /><br />
+        <br /><br />
         <hr class="solid"/>
         <p>© Copyright <a href="https://securerandompassword.net/"> securerandompassword.net </a></p>
 
