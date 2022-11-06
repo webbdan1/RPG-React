@@ -299,7 +299,7 @@ function randomNumberBetweenZeroAndOne() {
         should not be memorable and should be changed frequently. Store in your favorite password manager to avoid
         the need to remember the password.
       </div>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3433354412786219" crossorigin="anonymous"></script>
     </div>
 
 
