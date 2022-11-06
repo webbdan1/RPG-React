@@ -354,12 +354,15 @@ function popup(url) {
         </h2>
 
         <p>
-            <a href="https://securerandompassword.net"> Bitwarden - Zero-knowledge password manager</a>
+            <a href="https://bitwarden.com/"> Bitwarden - Zero-knowledge password manager</a>
         </p>
 
         <p>
             <a href="https://1password.com/"> Dashlane - includes auto password-changing feature </a>
         </p>
+        <br /><br /><br />
+        <hr class="solid"/>
+        <p>© Copyright <a href="https://securerandompassword.net/"> securerandompassword.net </a></p>
 
      </div>
 
