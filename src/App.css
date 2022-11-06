@@ -38,11 +38,9 @@ div#root {
 
 .container {
   background-color: #ffffff;
-  width: 400px;
+  width: 600px;
   max-width: 100%;
   margin: 0 auto;
-  min-height: 100%;
-  bottom: 0;
 }
 
 .wrapper-box {
