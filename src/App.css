@@ -1,17 +1,3 @@
-/*------------------------------------*\
-	$IPHONE
-\*------------------------------------*/
-@media screen and (max-device-width: 480px){
-    header {
-      margin-top: 0px !important;
-    }
-    body{
-        -webkit-text-size-adjust:none;
-        font-family:Helvetica, Arial, Verdana, sans-serif;
-        padding:0;
-    }
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -49,7 +35,7 @@ div#root {
 }
 
 .wrapper-box {
-  padding: 30px;
+  padding: 80px;
 }
 
 .word-crieteria__box {
