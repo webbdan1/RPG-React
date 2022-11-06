@@ -184,10 +184,34 @@ function randomNumberBetweenZeroAndOne() {
 
   }
 
+
+function facebook(purl, ptitle, pimg, text) {
+    var url = 'http://www.facebook.com/sharer.php?s=100';
+    url += '&p[title]=' + encodeURIComponent(ptitle);
+    url += '&p[summary]=' + encodeURIComponent(text);
+    url += '&p[url]=' + encodeURIComponent(purl);
+    url += '&p[images][0]=' + encodeURIComponent(pimg);
+    popup(url);
+}
+
+function twitter(purl, ptitle) {
+    var url = 'http://twitter.com/share?';
+    url += 'text=' + encodeURIComponent(ptitle);
+    url += '&url=' + encodeURIComponent(purl);
+    url += '&counturl=' + encodeURIComponent(purl);
+    popup(url);
+}
+
+function popup(url) {
+    window.open(url,'','toolbar=0,status=0,width=626, height=436');
+}
+
   return (
     <div className="wrapper">
       <div className="container wrapper-box">
+
         <h1>Secure Offline Password / Passphrase Generator</h1>
+
         <div className="password-box">
           <input
             type="text"
@@ -211,7 +235,9 @@ function randomNumberBetweenZeroAndOne() {
             {copied ? 'Copied!' : 'Copy text'}
           </button>
         </div>
+
         <br />
+
         <div className="word-crieteria__box">
           <div>
             <label>Length</label>
@@ -231,9 +257,9 @@ function randomNumberBetweenZeroAndOne() {
                 <option value="28">28</option>
                 <option value="32">32</option>
                 </select>
-
           </div>
         </div>
+
           <div className="word-crieteria__box">
           <div>
             <label>Generate Passphrase?</label>
@@ -245,6 +271,7 @@ function randomNumberBetweenZeroAndOne() {
             />
           </div>
         </div>
+
         <div className="word-crieteria__box">
           <div>
             <label>Include uppercase letters? [A - Z]</label>
@@ -256,6 +283,7 @@ function randomNumberBetweenZeroAndOne() {
             />
           </div>
         </div>
+
         <div className="word-crieteria__box">
           <div>
             <label>Include lowercase letters? [a - z]</label>
@@ -267,6 +295,7 @@ function randomNumberBetweenZeroAndOne() {
             />
           </div>
         </div>
+
         <div className="word-crieteria__box">
           <div>
             <label>Include numbers? [0 - 9]</label>
@@ -278,6 +307,7 @@ function randomNumberBetweenZeroAndOne() {
             />
           </div>
         </div>
+
         <div className="word-crieteria__box">
           <div>
             <label>Include symbols? [!, @, #, $, %, ^, &, *, (, )]</label>
@@ -289,21 +319,45 @@ function randomNumberBetweenZeroAndOne() {
             />
           </div>
         </div>
+
         <div>
           <button className="generate-button" onClick={generatePassword}>
             Generate password
           </button>
-
         </div>
-        Passwords / Passphrases are securely generated on your machine, meaning no data is sent over the internet. Strong passwords
-        should not be memorable and should be changed frequently. Store in your favorite password manager to avoid
-        the need to remember the password.
-      </div>
+        <br />
+
+        <div className="about__box">
+            Passwords / Passphrases are securely generated on your machine, meaning no data is sent over the internet. Strong passwords
+            should not be memorable and should be changed frequently. Store in your favorite password manager to avoid
+            the need to remember the password.
+        </div>
+        <br />
+        <div className="share__box">
+                <a href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=TITLE&p%5Bsummary%5D=DESC&p%5Burl%5D=URL&p%5Bimages%5D%5B0%5D=IMG_PATH"
+                onClick={facebook}>Share tool on Facebook</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=TITLE&url=URL"
+                onClick={twitter}>Share tool on Twitter</a>
+        </div>
+
+        <h2>
+            Here are some password managers we suggest:
+        </h2>
+
+         <p>
+            <a href="https://securerandompassword.net"> Bitwarden - Zero-knowledge password manager</a>
+         </p>
+
+         <p>
+            <a href="https://1password.com/"> Dashlane - includes auto password-changing feature </a>
+         </p>
+
+     </div>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3433354412786219" crossorigin="anonymous"></script>
+
     </div>
-
-
-
 
   );
 
