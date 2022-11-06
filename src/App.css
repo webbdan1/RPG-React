@@ -3,7 +3,7 @@
 \*------------------------------------*/
 @media screen and (max-device-width: 480px){
     header {
-      margin-top: -64px !important;
+      margin-top: 0px !important;
     }
     body{
         -webkit-text-size-adjust:none;
